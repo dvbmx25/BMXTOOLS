@@ -1,0 +1,123 @@
+<header class="site-header">
+  <a href="#" class="logo">BMX<span class="logo-accent">TOOLS</span></a>
+  <nav class="site-nav">
+    <a href="#" class="active">Map Creator</a>
+    <a href="#">BMX MAPS</a>
+    <a href="#">Training MAP</a>
+    <a href="#">Challenges</a>
+    <a href="#">Resources</a>
+  </nav>
+</header>
+
+<div class="pinboard-container">
+  <div class="board-header">
+    <h2>Map Creator</h2>
+    <p class="board-description">Create a MAP of all your RACES and SESSIONS... Challenge YOURSELF to list them all</p>
+  </div>
+
+  <div class="board-layout">
+    <div class="map-column">
+      <div class="image-pin-wrapper" id="imageWrapper">
+        <img
+          class="static-image"
+          id="staticImage"
+          draggable="false"
+          alt="Map of the United States"
+          src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Blank_US_Map_%28states_only%29.svg"
+        />
+      </div>
+    </div>
+
+    <div class="pins-panel">
+      <!-- YOUR RACES -->
+      <div class="section open" id="section-race">
+        <div class="section-header" data-section="race">
+          <div class="section-title">
+            <span class="section-dot red"></span>
+            Your Races
+          </div>
+          <span class="section-count" id="count-race">0</span>
+          <input type="checkbox" class="section-visibility" id="vis-race" checked title="show / hide this list on map" />
+          <span class="section-chevron">▼</span>
+        </div>
+        <div class="section-body">
+          <ul class="pins-list" id="list-race"></ul>
+        </div>
+      </div>
+
+      <!-- TRACKS -->
+      <div class="section" id="section-track">
+        <div class="section-header" data-section="track">
+          <div class="section-title">
+            <span class="section-dot blue"></span>
+            Tracks
+          </div>
+          <span class="section-count" id="count-track">0</span>
+          <input type="checkbox" class="section-visibility" id="vis-track" checked title="show / hide this list on map" />
+          <span class="section-chevron">▼</span>
+        </div>
+        <div class="section-body">
+          <ul class="pins-list" id="list-track"></ul>
+        </div>
+      </div>
+
+      <!-- DIRT JUMPS -->
+      <div class="section" id="section-dirt">
+        <div class="section-header" data-section="dirt">
+          <div class="section-title">
+            <span class="section-dot green"></span>
+            Dirt Jumps
+          </div>
+          <span class="section-count" id="count-dirt">0</span>
+          <input type="checkbox" class="section-visibility" id="vis-dirt" checked title="show / hide this list on map" />
+          <span class="section-chevron">▼</span>
+        </div>
+        <div class="section-body">
+          <ul class="pins-list" id="list-dirt"></ul>
+        </div>
+      </div>
+
+      <!-- PUMP TRACKS -->
+      <div class="section" id="section-pump">
+        <div class="section-header" data-section="pump">
+          <div class="section-title">
+            <span class="section-dot yellow"></span>
+            Pump Tracks
+          </div>
+          <span class="section-count" id="count-pump">0</span>
+          <input type="checkbox" class="section-visibility" id="vis-pump" checked title="show / hide this list on map" />
+          <span class="section-chevron">▼</span>
+        </div>
+        <div class="section-body">
+          <ul class="pins-list" id="list-pump"></ul>
+        </div>
+      </div>
+
+      <!-- BIKE PARKS -->
+      <div class="section" id="section-bikepark">
+        <div class="section-header" data-section="bikepark">
+          <div class="section-title">
+            <span class="section-dot white"></span>
+            Bike Parks
+          </div>
+          <span class="section-count" id="count-bikepark">0</span>
+          <input type="checkbox" class="section-visibility" id="vis-bikepark" checked title="show / hide this list on map" />
+          <span class="section-chevron">▼</span>
+        </div>
+        <div class="section-body">
+          <ul class="pins-list" id="list-bikepark"></ul>
+        </div>
+      </div>
+
+      <!-- SAVE YOUR MAP BUTTON -->
+      <button class="save-map-btn" id="saveMapBtn">Save Your Map!</button>
+    </div>
+  </div>
+
+  <div class="hint">
+    <span>🔹 click map to place the active pin type</span>
+    <span>✏️ click a pin to edit</span>
+    <span>☑️ checkbox hides the whole list</span>
+    <span><kbd>⌘/Ctrl</kbd> + click pin to remove</span>
+  </div>
+</div>
