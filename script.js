@@ -1,6 +1,7 @@
 (function () {
   const wrapper     = document.getElementById('imageWrapper');
   const staticImage = document.getElementById('staticImage');
+  const mapId       = wrapper.dataset.mapId || 'default';
 
   const sections = {
     race:     { el: document.getElementById('section-race'),     list: document.getElementById('list-race'),     count: document.getElementById('count-race'),     vis: document.getElementById('vis-race') },
